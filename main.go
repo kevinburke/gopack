@@ -75,7 +75,7 @@ func setupEnv() {
 
 func fmtcolor(c uint8, s string, args ...interface{}) {
 	if showColors {
-		fmt.Printf("\033[%dm", c)
+		fmt.Printf("\033[%d;31m", c)
 	}
 
 	if len(args) > 0 {
